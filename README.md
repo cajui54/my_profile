@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This is my profile
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desenvolvido meu portfólio onde mostro minhas habilidades e informações profissionais!
 
 ## Available Scripts
 
