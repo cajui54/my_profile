@@ -20,11 +20,12 @@ const Navbar = () => {
   
   const handleClick = (scroll) => { 
     if(widthScreen < 820) dispatch(showMenu({type: true}));
+    console.log(scroll);
     document.querySelector(scroll).scrollIntoView({behavior: 'smooth'});
   }
 
   useEffect(() => {
-    setWidthScreen(window.screen.width)
+    setWidthScreen(window.screen.width);
     if(widthScreen > 819) {
       dispatch(showMenu({type: false}));
     }
