@@ -18,9 +18,8 @@ const Navbar = () => {
   
   const { displayNav, menuOpen } = useSelector(state => state.profile);
   
-  const handleClick = (scroll) => { 
+  const handleClick = (scroll) => {
     if(widthScreen < 820) dispatch(showMenu({type: true}));
-    console.log(scroll);
     document.querySelector(scroll).scrollIntoView({behavior: 'smooth'});
   }
 
@@ -29,7 +28,6 @@ const Navbar = () => {
     if(widthScreen > 819) {
       dispatch(showMenu({type: false}));
     }
-    console.log(widthScreen);
   }, [widthScreen])
 
   return (

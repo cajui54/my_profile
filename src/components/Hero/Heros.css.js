@@ -111,6 +111,20 @@ const Heros = styled.article`
         }
       
     }
+    @media screen and (min-width: 1000px)  {
+        .container-hero-info {
+            width: 40%;
+        }
+        .container-hero-info h2 {
+            transform: scale(1.1) translateX(0px);
+        }
+        .container-hero-info h3 {
+            margin-left: 60px;
+            transform: translateY(-10px) scale(.8);
+        }
+    }
+    
+
 
 `
 

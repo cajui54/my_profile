@@ -7,8 +7,8 @@ import imgLogo from '../../assets/images/logoJK.png';
 
 const Header = () => {
   return (
-    <HeaderStyled>
-      <Link className='logo' to={'/home'}>
+    <HeaderStyled id='home'>
+      <Link className='logo' to={''}>
         <img src={imgLogo} alt="Logo"/>
       </Link>
 
