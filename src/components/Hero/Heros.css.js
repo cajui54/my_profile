@@ -112,8 +112,13 @@ const Heros = styled.article`
       
     }
     @media screen and (min-width: 1000px)  {
+        .containe_img {
+            width: 200px;
+            height: 200px;
+            margin-left: 150px;
+        }
         .container-hero-info {
-            width: 40%;
+            width: 50%;
         }
         .container-hero-info h2 {
             transform: scale(1.1) translateX(0px);

@@ -41,5 +41,12 @@ const Skill = styled.section`
             width: 70%;
         }
     }
+    @media screen and (min-width: 1000px) {
+        .container-skills {
+            width: 40%;
+            margin-left: 50px;
+            margin-top: -45px;
+        }
+    }
 `
 export default Skill;
