@@ -43,9 +43,14 @@ export const ProfileContainer = styled.div `
             margin-top: 60px; 
         }
     }
+    @media screen and (min-width: 1000px) {
+        position: relative;
+        top: 10%;
+    }
 `
 
 export const TitlesBio = styled.div`
+    top: 50%;
     margin: 30px auto;
     width: 80%;
     height: 70px;
@@ -78,6 +83,8 @@ export const TitlesBio = styled.div`
 `
 
 export const InfoBio = styled.article`
+    position: relative;
+    top: 10%;
     width: 80%;
     margin: -25px auto;
     color: #cbd5e1;
