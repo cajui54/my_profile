@@ -15,7 +15,7 @@ const projects = [
     {   
         image: imgMovies,
         title: 'Movie Star',
-        iconTecno: [<BiLogoReact/>, <PiFileCssBold/>],
+        iconTecno: [<BiLogoReact/>, <PiFileCssBold/>, <TbBrandJavascript/>],
         description: 'Projeto que consiste em uma bibliotéca de uma API de filmes',
         iconSocial: [
             {link: 'https://movie-star-neon.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
@@ -44,9 +44,9 @@ const projects = [
     },
     {   
         image: imgDolar_Real,
-        title: 'Conversor Dolar & Real',
+        title: 'Conversor de Moedas',
         iconTecno: [<AiFillHtml5/>, <PiFileCssBold/>, <TbBrandJavascript/>],
-        description: 'Conversor de moeda, que converte dola para o real, utilizando uma API que atualizar a cada 30 segundos.',
+        description: 'Utiliza uma API que atualizar a cada 30 segundos.',
         iconSocial: [
             {link: 'https://cajui54.github.io/conversor-moeda-dolar-real/', svgIcon: <FaGlobe/>, title: 'WebSite'},
             {link: 'https://github.com/cajui54/conversor-moeda-dolar-real', svgIcon: <FaGithub/>, title: 'Repositório'} 

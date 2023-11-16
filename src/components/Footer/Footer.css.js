@@ -1,23 +1,19 @@
 import styled from "styled-components";
 
-const Footers =  styled.footer`
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .container-title {
+export const Footer = styled.footer`
+    min-height: 5rem;
+    box-shadow: 0 5px 10px #000;
+    padding: 10px 0;
+    div {
         text-align: center;
-        width: 80%;
     }
-    .container-title h2 {
-        color: #fff;
+    div h2 {
+        
     }
-    .container-title h3 {
-        color: #22d3ee;
-        transform: translateY(-9px) scale(.8);
+    div h3 {
+        margin-top: -15px;
+        color: #39BFBD;
+        font-family: 'Ubuntu', sans-serif;
     }
-`
 
-export default Footers;
+`

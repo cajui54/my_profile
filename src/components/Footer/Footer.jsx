@@ -1,14 +1,14 @@
 import React from 'react';
-import Footers from './Footer.css';
+import * as Style from './Footer.css';
 
 const Footer = () => {
   return (
-    <Footers>
-      <div className="container-title">
-        <h2>Portfólio</h2>
-        <h3>Jackson Silva</h3>
+    <Style.Footer>
+      <div id='footer'>
+          <h2>Jackson Silva</h2>
+          <h3>Portfólio</h3>
       </div>
-    </Footers>
+    </Style.Footer>
   )
 }
 

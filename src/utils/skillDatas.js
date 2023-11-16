@@ -1,11 +1,18 @@
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaGithub, FaNode  } from "react-icons/fa";
+import { TbBrandRedux, TbBrandJavascript } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
+
+
 const skills = [
-    {title: 'HTML', icon: 'fa-brands fa-html5'},
-    {title: 'CSS', icon: 'fa-brands fa-css3-alt'},
-    {title: 'JavaScript', icon: 'fa-brands fa-square-js'},
-    {title: 'Git', icon: 'fa-brands fa-git-alt'},
-    {title: 'GitHub', icon: 'fa-brands fa-github'},
-    {title: 'React.JS', icon: 'fa-brands fa-react'},
-    {title: 'Ubuntu', icon: 'fa-brands fa-ubuntu'},
+   {title: 'React.JS', subTitle: 'Library for web', svg: <FaReact/>},
+   {title: 'Redux', subTitle: 'Gerenciador de estados globais', svg: <TbBrandRedux/>},
+   {title: 'Node.JS', subTitle: 'Javascript runtime ', svg: <FaNode/>},
+   {title: 'JavaScript', subTitle: 'Linguagem de programação ', svg: <TbBrandJavascript/>},
+   //{title: 'TypeScript', subTitle: 'Extends JavaScript by adding types', svg: <SiTypescript/>},
+   {title: 'HTML5', subTitle: 'hyper text markup language', svg: <FaHtml5/>},
+   {title: 'CSS3', subTitle: 'Cascading Style Sheets', svg: <FaCss3Alt/>},
+   {title: 'Git', subTitle: 'Gerenciador de versionamento', svg: <FaGitAlt/>},
+   {title: 'GitHub', subTitle: 'Repositório remoto', svg: <FaGithub />},
 ]
 
 export default skills;

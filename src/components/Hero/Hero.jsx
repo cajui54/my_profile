@@ -1,58 +1,51 @@
 import React from 'react';
-import {FaSquareGithub} from 'react-icons/fa6';
-import {FaWhatsapp} from 'react-icons/fa';
-import {BsLinkedin} from 'react-icons/bs';
-import {LiaFileDownloadSolid} from 'react-icons/lia';
-import imgProfile from '../../assets/images/photo.jpeg';
-import curriculoPDF from '../../assets/pdf/curriculo.pdf'
-import Heros from './Heros.css';
+import * as Style from './Hero.css';
+import imgProfile from '../../assets/images/profile.png';
+import filePDF from '../../assets/pdf/curriculo.pdf'
+import { FaGithub,  FaLinkedin, FaFileDownload, FaWhatsapp   } from "react-icons/fa";
+
+
 
 const Hero = () => {
   return (
-    <Heros>
+    <Style.Hero id='aboutMe'>
+      <Style.ProfileContainer>
+        <img src={imgProfile} alt="profile image" />
+      </Style.ProfileContainer>
+    
+        <Style.InfoBio id='aboutMe'>
+            <Style.TitlesBio>
+                <h2>Olá, Eu sou <span>Jackson Silva</span></h2>
+            </Style.TitlesBio>
 
-      <div className="containe_img" id='aboutMe'>
-            <img src={imgProfile} alt="foto perfil" />
-      </div>
+                <p>
+                    Estou cursando Ciência da Computação e estudando desenvolvimento web com foco no full-stack, e um dos meus princípais objetivos é dominar as princípais tecnologias relacionado a esse ecossistema.
+                </p>
 
-      <section className='container-hero-info'>
+            <Style.SVGIconsContainer>
+                <a href='https://wa.me/5511941515753' target='blank'>
+                    <FaWhatsapp/>
+                    <span>What</span>
+                </a>
 
-        <div className="container-title-hero">
-          <h2>Olá, Eu Sou <span>Jackson Silva</span></h2>
-          <h3>Developer Front-End</h3>
-        </div>
+                <a href='https://github.com/cajui54' target='blank'>
+                    <FaGithub/>
+                    <span>GitHub</span>
+                </a>
 
-        <p>
-          Estou cursando Ciência da Computação e estudando desenvolvimento
-          web com foco no front-end, e um dos meus princípais objetivos é 
-          dominar as princípais tecnologias relacionado a esse ecossistema.
-        </p>
+                <a href='https://www.linkedin.com/in/jacksoncajui/' target='blank'>
+                    <FaLinkedin/>
+                    <span>Linkedin</span>
+                </a>
 
-        <div className="container-media-social">
+                <a href={filePDF} download>
+                    <FaFileDownload/>
+                    <span>Currículo</span>
+                </a>
+            </Style.SVGIconsContainer>
+        </Style.InfoBio>
 
-          <a title='Github' href="https://github.com/cajui54" target="_blank" rel="noopener noreferrer">
-            <FaSquareGithub/>
-          </a>
-
-          <a title='Meu Whats app' href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp/>
-          </a>
-
-          <a title='Linkedin' href="https://www.linkedin.com/in/jacksoncajui/" target="_blank" rel="noopener noreferrer">
-            <BsLinkedin/>
-          </a>
-
-          <a href={curriculoPDF} download title='Baixar Currículo'>
-            <LiaFileDownloadSolid/>
-            <span>Currículo</span>
-          </a>
-          </div>
-      </section>
-      
-
-      
- 
-    </Heros>
+    </Style.Hero>
   )
 }
 
