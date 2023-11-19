@@ -58,8 +58,8 @@ const projects = [
         iconTecno: [<AiFillHtml5/>, <PiFileCssBold/>, <TbBrandJavascript/>],
         description: 'Simulador para calcular dividendos FIIs',
         iconSocial: [
-            {link: 'https://simulador-dividendo-fundo-imobiliario-zeta.vercel.app/', svgIcon: <FaGlobe/>},
-            {link: 'https://github.com/cajui54/SimuladorDividendoFundoImobiliario', svgIcon: <FaGithub/>} 
+            {link: 'https://simulador-dividendo-fundo-imobiliario-zeta.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/SimuladorDividendoFundoImobiliario', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   
@@ -68,8 +68,8 @@ const projects = [
         iconTecno: [<AiFillHtml5/>, <PiFileCssBold/>, <TbBrandJavascript/>],
         description: 'Gerenciador de usuários , que simula o gerencionamento de usuários',
         iconSocial: [
-            {link: 'https://sistema-gerenciador-usuarios.vercel.app/#', svgIcon: <FaGlobe/>},
-            {link: 'https://github.com/cajui54/Sistema-Gerenciador-Usuarios', svgIcon: <FaGithub/>} 
+            {link: 'https://sistema-gerenciador-usuarios.vercel.app/#', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/Sistema-Gerenciador-Usuarios', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
 ];

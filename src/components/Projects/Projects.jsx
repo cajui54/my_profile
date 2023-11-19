@@ -9,7 +9,6 @@ const Projects = () => {
 
   useEffect(() => {
     setWindowsSizeWidth(window.innerWidth);
-    console.log(windowsSizeWidth);
   },[window.innerWidth]);
 
   return (
@@ -20,9 +19,9 @@ const Projects = () => {
         <h3>Meus projetos recentes</h3>
       </Main.Titles>
 
-     {/*windowsSizeWidth < 1000 && <Item/>*/}
-     {/*windowsSizeWidth >= 1000 && <ItemGrid/>*/}
-      <Item/>
+     {windowsSizeWidth < 1000 && <Item/>}
+     {windowsSizeWidth >= 1000 && <ItemGrid/>}
+      
     </Style.Project>
   )
 }
