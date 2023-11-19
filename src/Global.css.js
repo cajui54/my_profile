@@ -23,5 +23,7 @@ export default createGlobalStyle`
         width: 100vw;
         overflow-x: hidden;
     }
-
+    .activeNav {
+        color: red;
+    }
 `

@@ -30,7 +30,8 @@ export const ListContact = styled.ul`
         color: #39BFBD;
     }
     li span {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+        color: #fff;
     }
     li:first-child {
         flex-direction: column;

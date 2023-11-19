@@ -5,9 +5,9 @@ import * as Main from '../../Main.css'
 
 const Skills = () => {
   return (
-    <Style.Skill>
+    <Style.Skill id='skills'>
 
-        <Main.Titles id='skills'>
+        <Main.Titles>
             <h2>My Skills</h2>
             <h3>Minhas principais habilidades</h3>
         </Main.Titles>

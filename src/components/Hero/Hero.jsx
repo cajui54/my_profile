@@ -13,7 +13,7 @@ const Hero = () => {
         <img src={imgProfile} alt="profile image" />
       </Style.ProfileContainer>
     
-        <Style.InfoBio id='aboutMe'>
+        <Style.InfoBio>
             <Style.TitlesBio>
                 <h2>Olá, Eu sou <span>Jackson Silva</span></h2>
             </Style.TitlesBio>

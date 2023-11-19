@@ -11,7 +11,7 @@ import * as Main from '../../Main.css';
 
 const ContactMe = () => {
   return (
-    <Style.ContactMe id='contactMe' className='active'>
+    <Style.ContactMe id='contactMe'>
         <Main.Titles>
             <h2>My Contacts</h2>
             <h3>Meus principais Contatos</h3>

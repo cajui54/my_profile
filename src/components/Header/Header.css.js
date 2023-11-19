@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import img from '../../assets/images/moon.jpg'
 
 export const Header = styled.header`
+    background-image: linear-gradient(to right, rgba(105,105,105, .4) ,#2C2C2C, #2C2C2C), url(${img});
+    background-attachment: fixed;
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
     position: fixed;
     width: 100%;
     height: 8rem;
-    background-color: #2C2C2C;
     box-shadow: 0 0 2px black;
     display: flex;
     align-items: center;

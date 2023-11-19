@@ -14,14 +14,32 @@ const Nav = () => {
         dispatch(putOnClass(''));
         dispatch(openNav('-100%'));
     }
-    
+
+    const handleSetActive = (to) => to;
+    const optionsMenu = [
+      {goTo: 'aboutMe', offsetValue: -300, title: 'About Me'},
+      {goTo: 'skills', offsetValue: -100, title: 'Skills'},
+      {goTo: 'projects', offsetValue: -100, title: 'Projects'},
+      {goTo: 'contactMe', offsetValue: 500, title: 'Contact Me'},
+    ]
   return (
     <Style.NavMenu value={classMoveNav}>
         <NavLink to='/' onClick={handleCloseMenu}>Home</NavLink>
-        <Link to='aboutMe' activeClass="activeN" smooth={true} offset={-300} duration={500} onClick={handleCloseMenu}>About Me</Link>
-        <Link to='skills' activeClass="active" smooth={true} offset={-100} duration={500} onClick={handleCloseMenu}>Skills</Link>
-        <Link to='projects' activeClass="active" smooth={true} offset={-100} duration={500} onClick={handleCloseMenu}>Projects</Link>
-        <Link to='contactMe' activeClass="active" smooth={true} offset={0} duration={500} onClick={handleCloseMenu}>Contact Me</Link>
+        
+        {
+          optionsMenu && optionsMenu.map((opiton, index) => (
+            <Link key={index} to={opiton.goTo}
+            activeClass="active"
+            smooth={true}
+            offset={opiton.offsetValue}
+            duration={500}
+            spy={true}
+            onClick={handleCloseMenu}
+            onSetActive={handleSetActive}
+            >{opiton.title}</Link>
+          ))
+        }
+
     </Style.NavMenu>
   )
 }
