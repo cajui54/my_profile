@@ -83,8 +83,8 @@ export const Paragraph = styled.p`
 `
 
 export const ContainerSocial = styled.div`
-    width: 50%;
-    padding: 5px;
+    width: 100px;
+    padding: 2px;
     margin: -10px auto;
     display: flex;
     a {

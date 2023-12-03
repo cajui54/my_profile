@@ -3,7 +3,7 @@ import img from '../../assets/images/moon.jpg';
 
 
 export const Hero = styled.div`
-    background: linear-gradient(rgba(255,255,255,0.1), #2C2C2C), url(${img});
+    background: linear-gradient(rgba(255,255,255,0.0), #2C2C2C), url(${img});
     background-position-x: 850px;
     width: 100%;
     min-height: 100vh;
@@ -21,8 +21,8 @@ export const ProfileContainer = styled.div `
     margin: 20px auto;
     background-image: url(${img});
     background-size: 600px;
-    background-position-y: -200px;
-    background-attachment: fixed;
+    background-position-y: -50px;
+    
     border: 2px solid #fff;
     width: 20rem;
     height: 20rem;
@@ -45,6 +45,17 @@ export const ProfileContainer = styled.div `
         margin-top: 40px;
         filter: brightness(.7);
         transform: scale(1.2);
+        animation: fadeDownImg .9s ease-in-out;
+    }
+    
+
+    @keyframes fadeDownImg {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     @media screen and (min-width: 800px){
@@ -103,11 +114,27 @@ export const InfoBio = styled.article`
     color: #cbd5e1;
     font-size: 2rem;
     text-align: center;
+    animation: fadeDown .8s;
+
+    @keyframes fadeDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px) scale(0.9);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+        }
+    }
     p {
+        color: #fff;
         text-shadow: 3px 2px 2px #2C2C2C;
     }
     @media screen and (min-width: 800px){
+        width: 700px;
+        height: 100%;
         p {
+            width: 80%;
             line-height: 35px;
             text-align: left;
         }
@@ -167,6 +194,7 @@ export const SVGIconsContainer = styled.div`
     }
     @media screen and (min-width: 850px){
         width: 400px;
+        margin-left: 0;
     }
 `
 
