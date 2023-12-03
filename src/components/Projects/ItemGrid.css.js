@@ -5,6 +5,9 @@ export const ItemGrid = styled.div`
     min-height: 80vh;
     color: #fff;
 
+    @media screen and (max-width: 999px){
+        display: none;
+    }
 `
 export const ContainerCard = styled.div`
     width: 80%;
@@ -15,6 +18,9 @@ export const ContainerCard = styled.div`
 `
 export const Card = styled.div`
     background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-height: 400px;
     border-radius: 10px;
     overflow: hidden;
@@ -63,8 +69,7 @@ export const ContatinerTecIcons = styled.div`
         color: #39BFBD;
     }
     div span svg {
-        filter: brightness(.5);
-        
+        font-size: 2.5rem;
     }
 
 `
@@ -80,7 +85,7 @@ export const Paragraph = styled.p`
 export const ContainerSocial = styled.div`
     width: 50%;
     padding: 5px;
-    margin: -15px auto;
+    margin: -10px auto;
     display: flex;
     a {
         color: #fff;
@@ -96,9 +101,10 @@ export const ContainerSocial = styled.div`
         color: #39BFBD;
     }
     a svg {
-        font-size: 1.5rem;
+        font-size: 5.0rem;
     }
     a span {
+        margin: 3px;
         font-size: .5rem;
     }
 `

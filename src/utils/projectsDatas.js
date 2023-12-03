@@ -9,7 +9,8 @@ import  { AiFillHtml5 } from 'react-icons/ai';
 import  { PiFileCssBold } from 'react-icons/pi';
 import  { TbBrandJavascript } from 'react-icons/tb';
 import  {FaNode, FaGlobe, FaGithub} from 'react-icons/fa';
-
+import { BsFiletypeJson } from "react-icons/bs";
+import { SiStyledcomponents } from "react-icons/si";
 
 const projects = [
     {   
@@ -35,11 +36,11 @@ const projects = [
     {   
         image: imgStoque,
         title: 'Dashboard Stock',
-        iconTecno: [<AiFillHtml5/>, <PiFileCssBold/>, <TbBrandJavascript/>],
+        iconTecno: [<BiLogoReact/>, <BsFiletypeJson/>, <SiStyledcomponents/>],
         description: 'Gerenciador de Estoque, que simula o gerencionamento de um estoque de bebidas',
         iconSocial: [
-            {link: 'https://cajui54.github.io/dashboard-adega-manager/', svgIcon: <FaGlobe/>, title: 'WebSite'},
-            {link: 'https://github.com/cajui54/dashboard-adega-manager', svgIcon: <FaGithub/>, title: 'Repositório'} 
+            {link: 'https://dashboard-reactjs-lac.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/dashboard-reactjs', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   

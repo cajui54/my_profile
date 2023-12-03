@@ -52,6 +52,9 @@ export const Item = styled.div`
         color: #39BFBD;
         text-shadow: 0 2px 3px #000;
     }
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
 `   
 
 export const LinkImage = styled.div`

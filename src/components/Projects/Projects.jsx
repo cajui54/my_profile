@@ -19,9 +19,8 @@ const Projects = () => {
         <h3>Meus projetos recentes</h3>
       </Main.Titles>
 
-     {windowsSizeWidth < 1000 && <Item/>}
-     {windowsSizeWidth >= 1000 && <ItemGrid/>}
-      
+      <Item/>
+      <ItemGrid/>
     </Style.Project>
   )
 }

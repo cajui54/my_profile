@@ -5,8 +5,9 @@ import filePDF from '../../assets/pdf/curriculo.pdf'
 import { FaGithub,  FaLinkedin, FaFileDownload, FaWhatsapp   } from "react-icons/fa";
 
 
-
 const Hero = () => {
+    
+
   return (
     <Style.Hero id='aboutMe'>
       <Style.ProfileContainer>

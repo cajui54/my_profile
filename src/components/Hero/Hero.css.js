@@ -3,9 +3,12 @@ import img from '../../assets/images/moon.jpg';
 
 
 export const Hero = styled.div`
+    background: linear-gradient(rgba(255,255,255,0.1), #2C2C2C), url(${img});
+    background-position-x: 850px;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     margin-top: 55px;
+
     @media screen and (min-width: 800px){
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -17,14 +20,24 @@ export const Hero = styled.div`
 export const ProfileContainer = styled.div `
     margin: 20px auto;
     background-image: url(${img});
-    background-size: 350px 130%;
-    background-position: 50px;
+    background-size: 600px;
+    background-position-y: -200px;
     background-attachment: fixed;
     border: 2px solid #fff;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     overflow: hidden;
+    animation: profile 10s ease-in-out .5s infinite alternate-reverse forwards;
+
+    @keyframes profile {
+        to {
+            background-position-x: 0;
+        }
+        from {
+            background-position-x: 200px;
+        }
+    }
 
     img {
         width: 100%;
@@ -90,7 +103,9 @@ export const InfoBio = styled.article`
     color: #cbd5e1;
     font-size: 2rem;
     text-align: center;
-    
+    p {
+        text-shadow: 3px 2px 2px #2C2C2C;
+    }
     @media screen and (min-width: 800px){
         p {
             line-height: 35px;
@@ -149,6 +164,9 @@ export const SVGIconsContainer = styled.div`
     @media screen and (min-height: 800px) and (max-width: 500px) {
         margin-top: 30px;
         width: 80%;
+    }
+    @media screen and (min-width: 850px){
+        width: 400px;
     }
 `
 

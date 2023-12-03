@@ -3,7 +3,7 @@ import * as Style  from './ItemGrid.css';
 import projects from '../../utils/projectsDatas';
 
 const ItemGrid = () => {
-    console.log(projects[0].iconSocial[0].link);
+    
   return (
     <Style.ItemGrid>
       <Style.ContainerCard>
@@ -28,7 +28,7 @@ const ItemGrid = () => {
               <Style.ContainerSocial>
                 {
                   project.iconSocial.map((social, index) => (
-                    <a href={social.link}>
+                    <a key={index} href={social.link} target='_blank'>
                       {social.svgIcon}
                       <span>{social.title}</span>
                     </a>
