@@ -20,7 +20,7 @@ const Nav = () => {
       {goTo: 'aboutMe', offsetValue: -300, title: 'About Me'},
       {goTo: 'skills', offsetValue: -100, title: 'Skills'},
       {goTo: 'projects', offsetValue: -100, title: 'Projects'},
-      {goTo: 'contactMe', offsetValue: 500, title: 'Contact Me'},
+      {goTo: 'contactMe', offsetValue: -50, title: 'Contact Me'},
     ]
   return (
     <Style.NavMenu value={classMoveNav}>

@@ -3,9 +3,6 @@ import { FaLinkedin, FaWhatsapp   } from "react-icons/fa";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { IoIosWarning } from "react-icons/io";
-
-
-
 import * as Style from './ContactMe.css';
 import * as Main from '../../Main.css';
 

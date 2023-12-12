@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imgBg from '../../assets/images/moon.jpg';
 
 export const Skill = styled.div`
 
