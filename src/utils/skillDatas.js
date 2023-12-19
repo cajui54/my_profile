@@ -8,7 +8,7 @@ const skills = [
    {title: 'Redux', subTitle: 'Gerenciador de estados globais', svg: <TbBrandRedux/>},
    {title: 'Axios', subTitle: 'Client HTTP', svg: <SiAxios/>},
    {title: 'Styled-Componets', subTitle: 'CSS baseado em JS', svg: <SiStyledcomponents/>},
-   {title: 'Jest', subTitle: 'Framework de teste Unitários', svg: <SiJest/>},
+   //{title: 'Jest', subTitle: 'Framework de teste Unitários', svg: <SiJest/>},
    //{title: 'Node.JS', subTitle: 'Javascript runtime ', svg: <FaNode/>},
    {title: 'TypeScript', subTitle: 'Extends JavaScript by adding types', svg: <SiTypescript/>},
    {title: 'JavaScript', subTitle: 'Linguagem de programação ', svg: <TbBrandJavascript/>},
