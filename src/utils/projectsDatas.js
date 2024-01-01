@@ -4,23 +4,35 @@ import imgDolar_Real from '../assets/images/real_dolar.jpg';
 import imgStoque from '../assets/images/stock.jpg';
 import imgFII from '../assets/images/fiis.jpeg';
 import imgUser from '../assets/images/user.jpg';
+import imgBarbershop from '../assets/images/babershop.png';
 import  {BiLogoReact, BiLogoMongodb} from 'react-icons/bi';
 import  { AiFillHtml5 } from 'react-icons/ai';
 import  { PiFileCssBold } from 'react-icons/pi';
-import  { TbBrandJavascript } from 'react-icons/tb';
+import  { TbBrandJavascript, TbBrandRedux } from 'react-icons/tb';
 import  {FaNode, FaGlobe, FaGithub} from 'react-icons/fa';
 import { BsFiletypeJson } from "react-icons/bs";
 import { SiStyledcomponents } from "react-icons/si";
+import { SiAxios} from "react-icons/si";
 
 const projects = [
+    {   
+        image: imgBarbershop,
+        title: 'Barbershop',
+        iconTecno: [<BiLogoReact/>, <TbBrandRedux/>, <SiStyledcomponents/>, <SiAxios/>],
+        description: 'Gerenciador de uma barbearia',
+        iconSocial: [
+            {link: 'https://movie-star-neon.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/Movie_Star', svgIcon: <FaGithub/>, title: 'Repositório'} 
+        ]
+    },
     {   
         image: imgMovies,
         title: 'Movie Star',
         iconTecno: [<BiLogoReact/>, <PiFileCssBold/>, <TbBrandJavascript/>],
         description: 'Projeto que consiste em uma bibliotéca de uma API de filmes',
         iconSocial: [
-            {link: 'https://movie-star-neon.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
-            {link: 'https://github.com/cajui54/Movie_Star', svgIcon: <FaGithub/>, title: 'Repositório'} 
+            {link: 'https://front-end-barbershop.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/front-end-barbershop', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   
