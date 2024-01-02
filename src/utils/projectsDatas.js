@@ -21,7 +21,7 @@ const projects = [
         iconTecno: [<BiLogoReact/>, <TbBrandRedux/>, <SiStyledcomponents/>, <SiAxios/>],
         description: 'Gerenciador de uma barbearia',
         iconSocial: [
-            {link: 'https://movie-star-neon.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://front-end-barbershop.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
             {link: 'https://github.com/cajui54/Movie_Star', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
