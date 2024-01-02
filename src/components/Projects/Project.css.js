@@ -12,7 +12,7 @@ export const Project = styled.div`
     margin-top: 30px;
     
     @media screen and (min-width: 1000px) {
-        
+
     }
     @media screen and (min-width: 1000px) and (min-height: 1000px){
         min-height: 50vh;

@@ -4,7 +4,7 @@ export const ItemGrid = styled.div`
     width: 100%;
     min-height: 80vh;
     color: #fff;
-
+    
     @media screen and (max-width: 999px){
         display: none;
     }
@@ -21,10 +21,10 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 400px;
+    height: 440px;
     border-radius: 10px;
     overflow: hidden;
-
+    
     a {
         overflow: hidden;
         display: block;
