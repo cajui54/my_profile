@@ -22,7 +22,7 @@ const projects = [
         description: 'Gerenciador de uma barbearia',
         iconSocial: [
             {link: 'https://front-end-barbershop.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
-            {link: 'https://github.com/cajui54/Movie_Star', svgIcon: <FaGithub/>, title: 'Repositório'} 
+            {link: 'https://github.com/cajui54/front-end-barbershop', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   
@@ -31,8 +31,8 @@ const projects = [
         iconTecno: [<BiLogoReact/>, <PiFileCssBold/>, <TbBrandJavascript/>],
         description: 'Projeto que consiste em uma bibliotéca de uma API de filmes',
         iconSocial: [
-            {link: 'https://front-end-barbershop.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
-            {link: 'https://github.com/cajui54/front-end-barbershop', svgIcon: <FaGithub/>, title: 'Repositório'} 
+            {link: 'https://movie-star-neon.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/Movie_Star', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   
