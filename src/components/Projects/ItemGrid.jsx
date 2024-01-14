@@ -1,15 +1,24 @@
-import React from 'react';
+import {useEffect} from 'react';
 import * as Style  from './ItemGrid.css';
 import projects from '../../utils/projectsDatas';
+import ScrollReveal from 'scrollreveal';
 
 const ItemGrid = () => {
+  const scrollReveal = ScrollReveal({reset: true});
+
+  useEffect(() => {
+    projects.forEach((_, index) => {
+      const time = parseInt(`${index + 1}000`);
+      scrollReveal.reveal(`.skillCard${index}`, {scale: 1.6, duration: time});
+    })
+  }, [])
     
   return (
     <Style.ItemGrid>
       <Style.ContainerCard>
         {
           projects.map((project, index) => {
-            return (<Style.Card key={index}>
+            return (<div key={index} className={`skillCard${index}`}><Style.Card >
               <a href={project.iconSocial[0].link} target="_blank">
                 <img src={project.image} alt={project.title} />
               </a>
@@ -35,7 +44,7 @@ const ItemGrid = () => {
                   ))
                 }
               </Style.ContainerSocial>
-            </Style.Card>
+            </Style.Card></div>
             )
           })
         }

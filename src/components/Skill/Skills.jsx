@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import skills from '../../utils/skillDatas';
 import * as Style from './Skill.css';
-import * as Main from '../../Main.css'
+import * as Main from '../../Main.css';
+import ScrollReveal from 'scrollreveal';
 
 const Skills = () => {
+    const scrollReveal = ScrollReveal({reset: true});
+    useEffect(() => {
+        
+        skills.forEach((_, index) => {
+            const time = parseInt(`${index + 1}000`);
+            scrollReveal.reveal(`.stack${index}`, {scale: 1.5, duration: time});
+        })
+    }, []);
+
   return (
     <Style.Skill id='skills'>
 
@@ -15,8 +25,8 @@ const Skills = () => {
         <Style.Stacks>
             {
                 skills && (
-                    skills.map(skill => (
-                        <div className='card-stack' key={skill.title}>
+                    skills.map((skill, index) => (
+                        <div className={`card-stack stack${index}`} key={skill.title}>
                             {skill.svg}
                             <div className="info">
                                 <h3>{skill.title}</h3>
