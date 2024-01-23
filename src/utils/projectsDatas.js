@@ -1,6 +1,6 @@
 import imgMovies from '../assets/images/movies_star.jpg';
 import imgSocial from '../assets/images/social.jpg';
-import imgDolar_Real from '../assets/images/real_dolar.jpg';
+import imgIMC from '../assets/images/imc.jpg';
 import imgStoque from '../assets/images/stock.jpg';
 import imgFII from '../assets/images/fiis.jpeg';
 import imgUser from '../assets/images/user.jpg';
@@ -56,13 +56,13 @@ const projects = [
         ]
     },
     {   
-        image: imgDolar_Real,
-        title: 'Conversor de Moedas',
+        image: imgIMC,
+        title: 'Smart IMC',
         iconTecno: [<AiFillHtml5/>, <PiFileCssBold/>, <TbBrandJavascript/>],
-        description: 'Utiliza uma API que atualizar a cada 30 segundos.',
+        description: 'App para calcular IMC.',
         iconSocial: [
-            {link: 'https://cajui54.github.io/conversor-moeda-dolar-real/', svgIcon: <FaGlobe/>, title: 'WebSite'},
-            {link: 'https://github.com/cajui54/conversor-moeda-dolar-real', svgIcon: <FaGithub/>, title: 'Repositório'} 
+            {link: 'https://imc-jks.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/Calculate_IMC', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   
