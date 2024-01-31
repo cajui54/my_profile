@@ -5,7 +5,7 @@ import imgStoque from '../assets/images/stock.jpg';
 import imgFII from '../assets/images/fiis.jpeg';
 import imgUser from '../assets/images/user.jpg';
 import imgBarbershop from '../assets/images/babershop.png';
-import  {BiLogoReact, BiLogoMongodb} from 'react-icons/bi';
+import  {BiLogoReact, BiLogoMongodb, BiLogoTypescript} from 'react-icons/bi';
 import  { AiFillHtml5 } from 'react-icons/ai';
 import  { PiFileCssBold } from 'react-icons/pi';
 import  { TbBrandJavascript, TbBrandRedux } from 'react-icons/tb';
@@ -58,7 +58,7 @@ const projects = [
     {   
         image: imgIMC,
         title: 'Smart IMC',
-        iconTecno: [<AiFillHtml5/>, <PiFileCssBold/>, <TbBrandJavascript/>],
+        iconTecno: [<BiLogoReact/>, <BiLogoTypescript/>, <SiStyledcomponents/>],
         description: 'App para calcular IMC.',
         iconSocial: [
             {link: 'https://imc-jks.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
