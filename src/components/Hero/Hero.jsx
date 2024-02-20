@@ -29,7 +29,9 @@ const Hero = () => {
             </Style.TitlesBio>
 
                 <p>
-                    Estou cursando Ciência da Computação e estudando desenvolvimento web com foco no full-stack, e um dos meus princípais objetivos é dominar as princípais tecnologias relacionado a esse ecossistema.
+                    Estou cursando Ciência da Computação e estudando desenvolvimento web 
+                    com foco no full-stack, e um dos meus principais objetivos é dominar 
+                    as principais tecnologias relacionado a esse ecossistema.
                 </p>
 
             <Style.SVGIconsContainer>
