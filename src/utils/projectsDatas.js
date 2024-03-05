@@ -11,10 +11,22 @@ import  { PiFileCssBold } from 'react-icons/pi';
 import  { TbBrandJavascript, TbBrandRedux } from 'react-icons/tb';
 import  {FaNode, FaGlobe, FaGithub} from 'react-icons/fa';
 import { BsFiletypeJson } from "react-icons/bs";
-import { SiStyledcomponents } from "react-icons/si";
+import { SiRedux, SiStyledcomponents } from "react-icons/si";
 import { SiAxios} from "react-icons/si";
+import { DiFirebase } from "react-icons/di";
+
 
 const projects = [
+    {   
+        image: imgStoque,
+        title: 'Dashboard Stock',
+        iconTecno: [<BiLogoReact title='React.JS'/>, <SiRedux title='Redux'/>, <BiLogoTypescript title='Typescript'/>, <DiFirebase title='Firebase'/>, <SiStyledcomponents title='Styled-Component'/>],
+        description: 'CRUD - Gerenciador de uma distribuídora de bebidas, obs: em desenvolvimento.',
+        iconSocial: [
+            {link: 'https://d-kebras-dashboard.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
+            {link: 'https://github.com/cajui54/dashboard_app', svgIcon: <FaGithub/>, title: 'Repositório'} 
+        ]
+    },
     {   
         image: imgBarbershop,
         title: 'Barbershop',
@@ -43,16 +55,6 @@ const projects = [
         iconSocial: [
             
             {link: 'https://github.com/cajui54/Rede_Social', svgIcon: <FaGithub/>}
-        ]
-    },
-    {   
-        image: imgStoque,
-        title: 'Dashboard Stock',
-        iconTecno: [<BiLogoReact/>, <BsFiletypeJson/>, <SiStyledcomponents/>],
-        description: 'Gerenciador de Estoque, que simula o gerencionamento de um estoque de bebidas',
-        iconSocial: [
-            {link: 'https://dashboard-reactjs-lac.vercel.app/', svgIcon: <FaGlobe/>, title: 'WebSite'},
-            {link: 'https://github.com/cajui54/dashboard-reactjs', svgIcon: <FaGithub/>, title: 'Repositório'} 
         ]
     },
     {   
