@@ -1,21 +1,21 @@
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Skills from "./components/Skill/Skills";
 import Projects from "./components/Projects/Projects";
 import ContactMe from "./components/ContactMe/ContactMe";
 import Footer from "./components/Footer/Footer";
+import GridSkill from "./components/GridSkills";
 
 function App() {
   return (
     <main>
       <BrowserRouter>
-          <Header/>
-          <Hero/>
-          <Skills/>
-          <Projects/>
-          <ContactMe/>
-          <Footer/>
+        <Header />
+        <Hero />
+        <GridSkill />
+        <Projects />
+        <ContactMe />
+        <Footer />
       </BrowserRouter>
     </main>
   );
